@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystals Collector</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+
+<body>
+    <h1>Crystals Collector</h1>
+    <br>
+    <div class="container">
+        <div class="instructions">
+            <p>How to play the game.</p>
+            <br>
+            <ul>
+                <li>There are four Crystals below. By clicking on a Crystal you will add a specific
+                    amount of points to your total score</li>
+                <br>
+                <li>You win the game by matching your total score to the choosen number, you lose the
+                    game if yoour total score goes above the random number.
+                </li>
+                <br>
+                <li>The value of each Crystal is hidden from you until you click on it </li>
+                <br>
+                <li>Each time when the game starts, the game will change the values of each Crystal</li>
+            </ul>
+        </div>
+        <br>
+        <div class="choosenNumber">Number to match</div>
+        
+        <br>
+
+        <div class="winsAndLosses">
+            <h2 id="wins">Wins:</h2>
+            <br>
+            <h3 id="Losses">Losses:</h3>
+        </div>
+
+    <div id="randomNumbers"></div>
+           <button class="button" value="1"><img src="assets/images/blue.jpg" class="img-responsive icons" height="120" width="120" class="CryRandomNumbe">
+           <button class="button1" value="2"><img src="assets/images/green.jpg" class="img-responsive icons" height="120" width="120" class="CryRandomNumbe1" >
+            <button class="button2" value="3"><img src="assets/images/red.png" class="img-responsive icons"  height="120" width="120" class="CryRandomNumbe2" >
+           <button class="button3" value="4"><img src="assets/images/yellow.jpg" class="img-responsive icons" height="120" width="120" class="CryRandomNumbe3" >
+
+            <br>
+            <h4 id="totalScore">Your total score is:</h4>
+
+           
+        </div>
+
+        <!-- <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span>Copyright&copy</span>
+        </div>
+    </footer> -->
+</body>
+
+</html>
