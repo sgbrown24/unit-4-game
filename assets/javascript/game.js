@@ -3,85 +3,115 @@ console.log("start");
 
 var randomNumber = 0;
 var CryRandomNumber = 0;
-var wins = 0;
-var lost = 0;
+var Wins = 0;
+var Losses = 0;
 var totalScore = 0;
 var crystalNumber = [];
 var CryRandomNumber1 = [];
 var CryRandomNumber2 = [];
 var CryRandomNumber3 = [];
-
+var choosenNumber = [];
 // making a random number in which the user has to mach
 var randomNumber = Math.floor(Math.random() * 102 + 19);
 $('.choosenNumber').html(randomNumber);
 
-
+// random number/ click function for crystal 1
 var CryRandomNumber = Math.floor(Math.random() * 12 + 1);
 $('.button').on('click', function(){
     var testing = $(this).attr('value', CryRandomNumber);
     var teasting2 = $(this).attr('value');
-    console.log(teasting2);
+   totalScore += CryRandomNumber;
+$('#totalScore').text(totalScore);
+
+// if total Score is equal to random number player wins
+if (totalScore === randomNumber) {
+    alert("You Win!!!")
+    wins++;
+    $("#Wins").html(Wins);
+    reset();
+}
+else if (totalScore > randomNumber) {
+    alert("You lost, Try Again")
+    Losses++;
+    $("#Losses").html(Losses);
+    reset();
+}
     
-
-
 })
 
-
+// random number/ click function for crystal 2
 var CryRandomNumber1 = Math.floor(Math.random() * 12 + 1);
 $('.button1').on('click', function(){
     var testing = $(this).attr('value', CryRandomNumber1);
     var teasting2 = $(this).attr('value');
-    console.log(teasting2);
+    totalScore += CryRandomNumber1;
+    $('#totalScore').text(totalScore);
 
-    
-
+      // if total Score is equal to random number player wins
+    if (totalScore === randomNumber) {
+        alert("You Win!!!")
+        wins++;
+        $("#Wins").html(Wins);
+        reset();
+    }
+    else if (totalScore > randomNumber) {
+        alert("You lost, Try Again")
+        Losses++;
+        $("#Losses").html(Losses);
+        reset();
+    }
 
 })
 
-
+// random number/ click function for crystal 3
 var CryRandomNumber2 = Math.floor(Math.random() * 12 + 1);
 $('.button2').on('click', function(){
     var testing = $(this).attr('value', CryRandomNumber2);
     var teasting2 = $(this).attr('value');
-    console.log(teasting2);
-    
+    totalScore += CryRandomNumber2;
+    $('#totalScore').text(totalScore);
 
+  // if total Score is equal to random number player wins
+if (totalScore === randomNumber) {
+        alert("You Win!!!")
+        wins++;
+        $("#Wins").html(Wins);
+        reset();
+    }
+    else if (totalScore > randomNumber) {
+        alert("You lost, Try Again")
+        Losses++;
+        $("#Losses").html(Losses);
+        reset();
+    }
+   
 
 })
 
-
+// random number/ click function for crystal 4
 var CryRandomNumber3 = Math.floor(Math.random() * 12 + 1);
 $('.button3').on('click', function(){
     var testing = $(this).attr('value', CryRandomNumber3);
     var teasting2 = $(this).attr('value');
-    console.log(teasting2);
+    totalScore += CryRandomNumber3;
+    $('#totalScore').text(totalScore);
+
+    // if total Score is equal to random number player wins
+    if (totalScore === randomNumber) {
+        alert("You Win!!!")
+        wins++;
+        $("#Wins").html(Wins);
+        reset();
+    }
+    else if (totalScore > randomNumber) {
+        alert("You lost, Try Again")
+        Losses++;
+        $("#Losses").html(Losses);
+        reset();
+    }
     
 
-
 })
-
-
-// function () {
-//     totalScore = totalScore + button3;
-//     console.log("new", totalScore);
-// }
-
- 
-// if (totalScore === randomNumber) {
-//     alert("You Win!!!")
-//     wins++;
-//     $("#Wins").html(Wins);
-//     reset();
-// }
-// else if (totalScore > randomNumber) {
-//     alert("Try Again")
-//     Losses++;
-//     $("#Losses").html(Losses);
-//     reset();
-// }
- 
-
-
 
 
 
